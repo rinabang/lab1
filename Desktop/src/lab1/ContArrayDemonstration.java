@@ -1,59 +1,59 @@
 package lab1;
 import java.util.Scanner;
 /** 
- * Класс для запуска и демонстрации работы ContArray.
- * @author Суховеркова Екатерина (3 курс 3 группа)
+ * РљР»Р°СЃСЃ РёРЅС‚РµСЂС„РµР№СЃ РґР»СЏ Р·Р°РїСѓСЃРєР° Рё РґРµРјРѕРЅСЃС‚СЂР°С†РёРё СЂР°Р±РѕС‚С‹ ContArray.
+ * @author РЎСѓС…РѕРІРµСЂРєРѕРІР° Р•РєР°С‚РµСЂРёРЅР° (3 РєСѓСЂСЃ 3 РіСЂСѓРїРїР°)
 */
 public class ContArrayDemonstration {
 
 	public static void main(String[] args) {
 		/**
-		 * @value a - создание нового объекта типа ContArray
+		 * @value a - СЃРѕР·РґР°РЅРёРµ РЅРѕРІРѕРіРѕ РѕР±СЉРµРєС‚Р° С‚РёРїР° ContArray
 		 */ 
 		ContArray a = new ContArray();
 		String f = "a";
 		do
 		{
 			/**
-			 * Считывание комманды
+			 * РЎС‡РёС‚С‹РІР°РЅРёРµ РєРѕРјРјР°РЅРґС‹
 			 */ 
-			System.out.println("Добавить элемент - 1\nПолучить элемент - 2\nУдалить элемент - 3\nВывести все элементы - 4");
+			System.out.println("Р”РѕР±Р°РІРёС‚СЊ СЌР»РµРјРµРЅС‚ - 1\nРџРѕР»СѓС‡РёС‚СЊ СЌР»РµРјРµРЅС‚ - 2\nРЈРґР°Р»РёС‚СЊ СЌР»РµРјРµРЅС‚ - 3\nР’С‹РІРµСЃС‚Рё РІСЃРµ СЌР»РµРјРµРЅС‚С‹ - 4");
 			Scanner cons = new Scanner(System.in);
 			int t = cons.nextInt();
 			switch (t)
 			{
 			/**
-			 * Кейс добавления элемента {@link ContArray#add}
+			 * РљРµР№СЃ РґРѕР±Р°РІР»РµРЅРёСЏ СЌР»РµРјРµРЅС‚Р° {@link ContArray#add}
 			 */ 
 			case 1:
 			{
-				System.out.print("Введите элемент, который хотите добавить: ");
+				System.out.print("Р’РІРµРґРёС‚Рµ СЌР»РµРјРµРЅС‚, РєРѕС‚РѕСЂС‹Р№ С…РѕС‚РёС‚Рµ РґРѕР±Р°РІРёС‚СЊ: ");
 				int x = cons.nextInt();
 				a.add(x);
 				break;
 			}
 			/**
-			 * Кейс получения элемента {@link ContArray#get}
+			 * РљРµР№СЃ РїРѕР»СѓС‡РµРЅРёСЏ СЌР»РµРјРµРЅС‚Р° {@link ContArray#get}
 			 */ 
 			case 2:
 			{
-				System.out.print("Введите индекс элемента, который хотите получить: ");
+				System.out.print("Р’РІРµРґРёС‚Рµ РёРЅРґРµРєСЃ СЌР»РµРјРµРЅС‚Р°, РєРѕС‚РѕСЂС‹Р№ С…РѕС‚РёС‚Рµ РїРѕР»СѓС‡РёС‚СЊ: ");
 				int i = cons.nextInt();
 				System.out.println(a.get(i));
 				break;
 			}
 			/**
-			 * Кейс удаления элемента {@link ContArray#del}
+			 * РљРµР№СЃ СѓРґР°Р»РµРЅРёСЏ СЌР»РµРјРµРЅС‚Р° {@link ContArray#del}
 			 */ 
 			case 3:
 			{
-				System.out.print("Введите индекс элемента, который хотите удалить: ");
+				System.out.print("Р’РІРµРґРёС‚Рµ РёРЅРґРµРєСЃ СЌР»РµРјРµРЅС‚Р°, РєРѕС‚РѕСЂС‹Р№ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ: ");
 				int i = cons.nextInt();
 				a.del(i);
 				break;
 			}
 			/**
-			 * Кейс вывода всех элементов {@link ContArray#to_string}
+			 * РљРµР№СЃ РІС‹РІРѕРґР° РІСЃРµС… СЌР»РµРјРµРЅС‚РѕРІ {@link ContArray#to_string}
 			 */ 
 			case 4:
 			{
@@ -62,9 +62,9 @@ public class ContArrayDemonstration {
 			}
 			}
 			/**
-			 * Считывание комманды
+			 * РЎС‡РёС‚С‹РІР°РЅРёРµ РєРѕРјРјР°РЅРґС‹
 			 */
-			System.out.println("Продолжить - a, выйти - q.");
+			System.out.println("РџСЂРѕРґРѕР»Р¶РёС‚СЊ - a, РІС‹Р№С‚Рё - q.");
 			Scanner cons2 = new Scanner(System.in);
 			f = cons2.nextLine();
 		} 
