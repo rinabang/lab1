@@ -14,7 +14,7 @@ class ContArrayTest {
 		a.add(1);
 		a.add(2);
 		a.add(3);
-		String expected = a.to_string();
+		String expected = a.toString();
 	    String actual = "1 2 3 ";
 	    Assert.assertEquals(expected, actual);
 	    a.del(0);
@@ -41,7 +41,7 @@ class ContArrayTest {
 		a.add(2);
 		a.add(3);
 		a.del(1);
-		String expected = a.to_string();
+		String expected = a.toString();
 	    String actual = "1 3 ";
 	    Assert.assertEquals(expected, actual);
 	    a.del(0);
